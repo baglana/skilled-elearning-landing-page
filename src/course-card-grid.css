@@ -1,0 +1,86 @@
+.course-card-grid {
+  display: grid;
+  grid-row-gap: 2.5rem;
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+}
+
+.course-card-grid__item {
+  padding: 1.5rem 1.81rem 2rem 1.75rem;
+  border-radius: 0.625rem;
+
+  &:first-child {
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+
+    & h3 {
+      color: #fff;
+      font-family: "Plus Jakarta Sans Variable", sans-serif;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 2rem; /* 133.333% */
+    }
+  }
+}
+
+.course-card {
+  position: relative;
+  padding-top: 3.5rem;
+  background: #fff;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+
+  &::before {
+    position: absolute;
+    top: -1.5rem;
+    left: 1.75rem;
+  }
+
+  &:nth-child(2)::before {
+    content: url("/animation.svg");
+  }
+
+  &:nth-child(3)::before {
+    content: url("/design.svg");
+  }
+
+  &:nth-child(4)::before {
+    content: url("/photography.svg");
+  }
+
+  &:nth-child(5)::before {
+    content: url("/crypto.svg");
+  }
+
+  &:nth-child(6)::before {
+    content: url("/business.svg");
+  }
+
+  & h4 {
+    margin-bottom: 1rem;
+    color: #13183f;
+    font-family: "Plus Jakarta Sans Variable", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  & p {
+    margin-bottom: 1.5rem;
+    color: #83869a;
+    font-family: "Plus Jakarta Sans Variable", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625rem; /* 162.5% */
+  }
+
+  & a {
+    color: #f74780;
+    font-family: "Plus Jakarta Sans Variable", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 155.556% */
+    text-decoration: none;
+  }
+}

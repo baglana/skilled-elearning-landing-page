@@ -12,5 +12,9 @@
     "prettier": "^3.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.0.19",
+    "reset-css": "^5.0.2"
   }
 }
