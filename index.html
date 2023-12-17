@@ -7,25 +7,56 @@
     <title>team1-skilled-elearning-landing-page</title>
   </head>
   <body>
-    <article class="">
+    <article class="p-4 md:pt-6 md:px-10 md:pb-9 lg:px-[10.3125rem] lg:pb-8">
       <header>
-        <nav class="flex justify-between">
-          <spam>Example</spam>
-          <button>Get Started</button>
+        <nav class="flex justify-between mb-[2.375rem]">
+          <span
+            class="text-[1.75rem] text-color-text-secondary font-extrabold leading-[normal]"
+            >skilled</span
+          >
+          <button
+            class="z-10 bg-color-black hover:bg-[#666CA3] min-w-[8.75rem] min-h-[3rem] rounded-[1.75rem] text-color-text-white font-bold leading-[1.75rem]"
+          >
+            Get Started
+          </button>
         </nav>
 
-        <section>
-          <aside>
-            <h1 class="text-color-text-gray">
+        <section
+          class="flex flex-col items-center md:flex-row md:items-start md:justify-between"
+        >
+          <aside class="mb-[2.875rem] md:mt-[3.75rem] lg:pr-32">
+            <h1
+              class="text-[2.5rem] text-color-text-secondary font-extrabold leading-[normal] mb-[1.625rem] lg:text-[3.5rem] lg:mb-[1.8125rem]"
+            >
               Maximize skill, minimize budget
             </h1>
-            <p>
+            <p
+              class="text-color-text-gray leading-[1.625rem] mb-[1.5rem] lg:text-[1.125rem] lg:leading-7 lg:mb-10"
+            >
               Our modern courses across a range of in-demand skills will give
               you the knowledge you need to live the life you want.
             </p>
-            <button>Get Started</button>
+            <button
+              class="min-w-[10.4375rem] min-h-[3.5rem] rounded-[1.96875rem] bg-[linear-gradient(180deg,_#FF6F48_0%,_#F02AA6_100%)] hover:bg-[linear-gradient(0deg,_rgba(255,_255,_255,_0.50)_0%,_rgba(255,_255,_255,_0.50)_100%),_linear-gradient(180deg,_#FF6F48_0%,_#F02AA6_100%)] text-color-text-white font-bold leading-[1.625rem]"
+            >
+              Get Started
+            </button>
           </aside>
-          <picture></picture>
+          <picture>
+            <source
+              srcset="public/header/image-desktop.svg"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="public/header/image-tablet.svg"
+              media="(min-width: 768px)"
+            />
+            <img
+              alt="Beautiful woman"
+              src="public/header/image-mobile.svg"
+              class="md:min-w-[22.5rem] md:max-w-[41.25rem] md:-mr-10 md:-mt-[6.875rem] md:-ml-16 lg:-mr-[10.3125rem] lg:-ml-0"
+            />
+          </picture>
         </section>
       </header>
 
