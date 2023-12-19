@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-grid {
+    @apply grid gap-y-10 pb-20 md:grid-cols-2 md:gap-x-[0.69rem] md:gap-y-14 md:pb-[5.38rem] lg:grid-cols-3 lg:gap-x-[1.88rem] lg:gap-y-20 lg:pb-[8.75rem];
+
+    & > * {
+      @apply pt-6 pr-[1.81rem] pb-8 pl-7 md:pt-14 md:pr-[1.31rem] md:pb-8 md:pl-8 lg:pt-16 lg:px-8 lg:pb-10 rounded-[10px];
+    }
+    & > .card {
+      @apply grid grid-rows-[auto_1fr_auto] pt-14 shadow-[0_25px_50px_0_rgba(6,22,141,0.04)] bg-color-bg;
+
+      & > svg {
+        @apply -mt-20 w-14 h-14;
+      }
+      & > h4 {
+        @apply text-xl/[normal] font-extrabold text-color-text-secondary;
+      }
+      & > p {
+        @apply mt-4 lg:mt-6 text-base/[1.625rem] font-medium text-color-text-primary;
+      }
+      & > a {
+        @apply mt-6 text-lg font-bold text-color-text-pink hover:text-color-text-hover-pink;
+      }
+    }
+  }
+}
