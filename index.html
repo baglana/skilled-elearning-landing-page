@@ -32,12 +32,20 @@
             </button>
           </aside>
           <picture>
-            <source srcset="public/header/image-desktop.svg" media="(min-width: 1440px)">
-            <source srcset="public/header/image-tablet.svg" media="(min-width: 768px)">
-            <img alt="Beautiful woman" src="public/header/image-mobile.svg" 
+            <source type="image/webp" srcset="/image-hero-desktop.webp, /image-hero-desktop@2x.webp 2x" media="(min-width: 1440px)">
+            <source type="image/webp" srcset="/image-hero-tablet.webp, /image-hero-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="/image-hero-mobile.webp, /image-hero-mobile@2x.webp 2x" media="(max-width: 767px)">
+            <source srcset="/image-hero-desktop.png, /image-hero-desktop@2x.png 2x" media="(min-width: 1440px)">
+            <source srcset="/image-hero-tablet.png, /image-hero-tablet@2x.png 2x" media="(min-width: 768px)">
+            <source srcset="/image-hero-mobile.png, /image-hero-mobile@2x.png 2x" media="(max-width: 767px)">
+            <img src="/image-hero-desktop.png" alt="Hero"
             class="md:min-w-[22.5rem] md:max-w-[41.25rem] md:-mr-10 md:-mt-[6.875rem] md:-ml-16 lg:-mr-[10.3125rem] lg:-ml-0"
             >
-          </picture>
+<!--            <source srcset="public/header/image-desktop.svg" media="(min-width: 1440px)">-->
+<!--            <source srcset="public/header/image-tablet.svg" media="(min-width: 768px)">-->
+<!--            <img alt="Beautiful woman" src="public/header/image-mobile.svg"-->
+<!--                 class="md:min-w-[22.5rem] md:max-w-[41.25rem] md:-mr-10 md:-mt-[6.875rem] md:-ml-16 lg:-mr-[10.3125rem] lg:-ml-0"-->
+<!--            >          </picture>-->
         </section>
       </header>
 
@@ -165,7 +173,7 @@
 
       <footer class='bg-darkBlue min-w-full flex items-center justify-between mt-20 px-4 py-9  md:mt-36 md:py-8 md:px-10 lg:px-20 xl:px-40'>
         <div>
-          <img src='./public/footer/logo-light.svg' alt='Light Logo'/>
+          <img src='/logo-light.svg' alt='Light Logo'/>
         </div>
         <div class='secondaryGradient inline-block py-3 px-8 text-white rounded-3xl cursor-pointer '>
           <a href='#'>Get Started</a>
