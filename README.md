@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/baglana/skilled-elearning-landing-page)
-- Live Site URL: [Add live site URL here](https://baglana.github.io/skilled-elearning-landing-page/)
+- Solution URL: [https://github.com/baglana/skilled-elearning-landing-page](https://github.com/baglana/skilled-elearning-landing-page)
+- Live Site URL: [https://baglana.github.io/skilled-elearning-landing-page/](https://baglana.github.io/skilled-elearning-landing-page/)
 
 ## My process
 
