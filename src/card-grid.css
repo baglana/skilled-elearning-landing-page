@@ -22,7 +22,7 @@
         @apply mt-4 lg:mt-6 text-base/[1.625rem] font-medium text-color-text-primary;
       }
       & > a {
-        @apply mt-6 text-lg font-bold text-color-text-pink hover:text-color-text-hover-pink;
+        @apply mt-6 text-lg font-bold text-color-text-pink hover:text-color-text-hover-pink transition-all duration-150;
       }
     }
   }
