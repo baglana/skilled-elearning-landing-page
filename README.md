@@ -12,11 +12,7 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,83 +25,101 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Mobile
+![](./public/screenshot-mobile1.png)
+![](./public/screenshot-mobile3.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+#### Tablet
+![](./public/screenshot-tablet1.png)
+![](./public/screenshot-tablet2.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+#### Desktop
+![](./public/screenshot-desktop1.png)
+![](./public/screenshot-desktop2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/baglana/skilled-elearning-landing-page)
+- Live Site URL: [Add live site URL here](https://baglana.github.io/skilled-elearning-landing-page/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Tailwind](https://tailwindcss.com/) - CSS framework
+- [Vite](https://vitejs.dev/) - Bundler
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Within a team of 3, I was assigned to do the middle part with the cards.
+By doing this part I practiced using Grid layout.
+I also learned how to use Tailwdind utility-first CSS framework to apply styles.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+  <main class="bg-gradient-to-b from-color-bg to-[#f0f1ff]">
+  <section class="max-w-fit m-auto px-4 md:px-10 lg:px-[10.3125rem]">
+    <ul class="card-grid">
+      <li class="bg-gradient-to-b from-[#ff6f48] to-[#f02aa6]">
+        <h3 class="text-2xl font-extrabold text-color-text-white">
+          Check out our most popular courses!
+        </h3>
+      </li>
+      <li class="card">
+        <svg ...></svg>
+        <h4>Animation</h4>
+        <p>
+          Learn the latest animation techniques to create stunning motion
+          design and captivate your audience.
+        </p>
+        <a href="#">Get Started</a>
+      </li>
+      ...
+    </ul>
+  </section>
+</main>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-grid {
+    @apply grid gap-y-10 pb-20 md:grid-cols-2 md:gap-x-[0.69rem] md:gap-y-14 md:pb-[5.38rem] lg:grid-cols-3 lg:gap-x-[1.88rem] lg:gap-y-20 lg:pb-[8.75rem];
+
+    & > * {
+      @apply pt-6 pr-[1.81rem] pb-8 pl-7 md:pt-14 md:pr-[1.31rem] md:pb-8 md:pl-8 lg:pt-16 lg:px-8 lg:pb-10 rounded-[10px];
+    }
+    & > .card {
+      @apply grid grid-rows-[auto_1fr_auto] pt-14 shadow-[0_25px_50px_0_rgba(6,22,141,0.04)] bg-color-bg;
+
+      & > svg {
+        @apply -mt-20 w-14 h-14;
+      }
+      & > h4 {
+        @apply text-xl/[normal] font-extrabold text-color-text-secondary;
+      }
+      & > p {
+        @apply mt-4 lg:mt-6 text-base/[1.625rem] font-medium text-color-text-primary;
+      }
+      & > a {
+        @apply mt-6 text-lg font-bold text-color-text-pink hover:text-color-text-hover-pink transition-all duration-150;
+      }
+    }
+  }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+In future projects I want to focus on dividing pages into reusable components and making transitions.
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+[Singularity Frontend 2023 Team1](https://github.com/singularity-autumn-2023/team1-skilled-elearning-landing-page/graphs/contributors)
+- [@RashEstebek](https://github.com/RashEstebek) - for installing Tailwind and doing `<header>`
+- [@Kanskii](https://github.com/Kanskii) - for doing `<footer>`
